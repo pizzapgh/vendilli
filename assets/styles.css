@@ -2,9 +2,15 @@ html{
  font-family: 'Lora', serif;
 }
 
+ul{
+  padding-left: 0;
+  list-style: none;
+}
+
 .container{
     max-width: 1020px;
     margin: auto;
+    padding: 0 1.5rem;
 }
 
 .vendilli-hey .container{
@@ -12,14 +18,16 @@ html{
     position: relative;
     flex-direction: column;
     align-items: center;
-    @media (min-width: 980px) {
-        display: flex;
-        position: relative;
-        flex-direction: row;
-      }
+}
+@media (min-width: 980px) {
+  .vendilli-hey .container{
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  }
 }
 .vendilli-hey h1 {
-    flex: 1;
     font-size: 140px;
     color: #EDF4F7;
     position: relative;
@@ -383,10 +391,7 @@ html{
 .vendilli-what-im-into .container{
     text-align: center;
 }
-@media (min-width: 980px) {
-    .vendilli-what-im-into .container{
-    
-  } 
+
 
 .vendilli-what-im-into{
     padding: 1rem 0;
@@ -417,17 +422,16 @@ html{
     }
   }
 
-  .vendilli-what-im-into .cool-stuff .links ul{
+  .vendilli-what-im-into .cool-stuff ul{
     list-style: none;
     padding-left: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
   }
 
 @media (min-width: 980px) {
-    .vendilli-what-im-into .cool-stuff .links ul{
+    .vendilli-what-im-into .cool-stuff ul{
         align-items: center;
         justify-content: flex-start;
     }
@@ -590,4 +594,7 @@ html{
     margin: 10px;
     cursor: pointer;
   }
-  
+
+  iframe{
+    margin-bottom: 4rem;
+  }
